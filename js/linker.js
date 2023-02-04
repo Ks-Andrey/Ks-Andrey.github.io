@@ -1,7 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
-    window.addEventListener('resize', () => {
+    function check() {
         if (window.innerWidth <= 991) {
             location.href = 'index-mobile.html';
         }
+    }
+
+    window.addEventListener('resize', () => {
+        check();
     });
+
+    check();
 })
