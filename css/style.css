@@ -1395,6 +1395,253 @@ footer .container-mobile .footer-text {
     opacity: 100%;
   }
 }
+.bg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(42, 92, 170, 0.5);
+  -webkit-animation: 0.3s show;
+          animation: 0.3s show;
+}
+.bg.hidden {
+  display: none;
+}
+
+.review-accept, .sign-in__popap {
+  -webkit-animation: 0.3s show;
+          animation: 0.3s show;
+  width: 440px;
+  max-width: 100%;
+  position: fixed;
+  padding: 50px 60px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #fff;
+  border-radius: 25px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 1001;
+  text-align: center;
+}
+.review-accept.hidden, .sign-in__popap.hidden {
+  display: none;
+}
+.review-accept .title, .sign-in__popap .title {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+.review-accept p, .sign-in__popap p {
+  font-size: 18px;
+  line-height: 1.3;
+  margin: 15px 0 20px;
+}
+.review-accept button.close-popap, .sign-in__popap button.close-popap {
+  width: 145px;
+  max-width: 100%;
+  height: 60px;
+  border-radius: 30px;
+  background: #2a5caa;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.review-accept button.close-popap:hover, .sign-in__popap button.close-popap:hover {
+  -webkit-box-shadow: -7.071px 7.071px 30px 0px #2a5caa;
+          box-shadow: -7.071px 7.071px 30px 0px #2a5caa;
+}
+.review-accept .close, .sign-in__popap .close {
+  padding: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+  width: 20px;
+  max-width: 100%;
+  position: absolute;
+  right: 25px;
+  top: 25px;
+}
+.review-accept .close svg, .sign-in__popap .close svg {
+  width: 100%;
+  display: block;
+  max-width: 100%;
+}
+
+.sign-in__popap {
+  padding: 50px 45px;
+}
+.sign-in__popap .sign-in__container {
+  width: 300px;
+  max-width: 100%;
+  margin: 0 auto 10px;
+}
+.sign-in__popap .sign-in__container button {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 55px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10px;
+  font-size: 14px;
+  color: #fff;
+  line-height: 1;
+  margin-top: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.sign-in__popap .sign-in__container button.ya {
+  background: #fb3f1d;
+}
+.sign-in__popap .sign-in__container button.ya:hover {
+  -webkit-box-shadow: -7.071px 7.071px 30px 0px #fb3f1d;
+          box-shadow: -7.071px 7.071px 30px 0px #fb3f1d;
+}
+.sign-in__popap .sign-in__container button.ya img {
+  width: 30px;
+  display: block;
+  margin-right: 10px;
+  margin-left: 5px;
+}
+.sign-in__popap .sign-in__container button.go {
+  background: #4385f5;
+}
+.sign-in__popap .sign-in__container button.go:hover {
+  -webkit-box-shadow: -7.071px 7.071px 30px 0px #4385f5;
+          box-shadow: -7.071px 7.071px 30px 0px #4385f5;
+}
+.sign-in__popap .sign-in__container button.go img {
+  width: 17px;
+  display: block;
+  margin-right: 17px;
+  margin-left: 10px;
+}
+.sign-in__popap .sign-in__container button.ok {
+  background: #f77a00;
+}
+.sign-in__popap .sign-in__container button.ok:hover {
+  -webkit-box-shadow: -7.071px 7.071px 30px 0px #f77a00;
+          box-shadow: -7.071px 7.071px 30px 0px #f77a00;
+}
+.sign-in__popap .sign-in__container button.ok img {
+  width: 32px;
+  display: block;
+  margin-right: 10px;
+  margin-left: 2px;
+}
+
+.container-mobile .review-accept, .container-mobile .sign-in__popap {
+  max-width: 88%;
+  padding: 55px 45px 30px;
+}
+.container-mobile .review-accept p, .container-mobile .sign-in__popap p {
+  font-size: 14px;
+  margin: 15px 0;
+}
+.container-mobile .review-accept button.close-popap {
+  font-size: 12px;
+}
+.container-mobile .review-accept .close, .container-mobile .sign-in__popap .close {
+  top: 20px;
+  right: 20px;
+}
+.container-mobile .review-accept .title, .container-mobile .sign-in__popap .title {
+  font-size: 20px;
+}
+.container-mobile .sign-in__popap form {
+  width: 100%;
+  margin-top: 20px;
+}
+.container-mobile .sign-in__popap form input {
+  width: 100%;
+  max-width: 100%;
+  padding: 0 20px;
+  height: 55px;
+  border-radius: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #f3f3f3;
+  outline: none;
+  border: none;
+}
+.container-mobile .sign-in__popap form input::-webkit-input-placeholder {
+  color: #000;
+  font-size: 12px;
+}
+.container-mobile .sign-in__popap form input::-moz-placeholder {
+  color: #000;
+  font-size: 12px;
+}
+.container-mobile .sign-in__popap form input:-ms-input-placeholder {
+  color: #000;
+  font-size: 12px;
+}
+.container-mobile .sign-in__popap form input::-ms-input-placeholder {
+  color: #000;
+  font-size: 12px;
+}
+.container-mobile .sign-in__popap form input::placeholder {
+  color: #000;
+  font-size: 12px;
+}
+.container-mobile .sign-in__popap form button {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 55px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 10px;
+  font-size: 14px;
+  color: #fff;
+  line-height: 1;
+  margin-top: 10px;
+  background: #ff3f4c;
+  margin-top: 25px;
+}
+
 .history {
   padding-top: 80px;
   position: relative;
