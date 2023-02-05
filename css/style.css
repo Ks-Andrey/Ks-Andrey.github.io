@@ -240,11 +240,12 @@ header .logo {
   width: 130px;
   max-width: 100%;
   border-radius: 100px;
-  background: #fff;
+  background: #f3f3f3;
   left: 12.5%;
   -webkit-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%);
   z-index: 2;
+  border: 2px solid #f3f3f3;
 }
 header .logo img {
   width: 100%;
@@ -1071,6 +1072,10 @@ footer .container-mobile .footer-text {
 .mobile {
   background: #fff;
 }
+.mobile header .logo {
+  background: #fff;
+  border: 2px solid #fff;
+}
 .mobile footer {
   padding: 25px 10px;
   -webkit-box-sizing: border-box;
@@ -1186,7 +1191,7 @@ footer .container-mobile .footer-text {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   padding: 0 10px;
-  width: 100%;
+  width: 305px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -1235,7 +1240,7 @@ footer .container-mobile .footer-text {
 }
 .mobile-menu__search .close {
   position: absolute;
-  right: 15px;
+  right: 35px;
   top: 20px;
 }
 
@@ -1343,9 +1348,6 @@ footer .container-mobile .footer-text {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-.mobile-menu__open .mobile-menu__buttons .close {
-  margin-right: 10px;
-}
 .mobile-menu__open .mobile-menu__buttons button {
   cursor: pointer;
   outline: none;
@@ -1395,6 +1397,25 @@ footer .container-mobile .footer-text {
 }
 .history {
   padding-top: 80px;
+  position: relative;
+}
+.history .logo {
+  position: absolute;
+  width: 130px;
+  max-width: 100%;
+  border-radius: 100px;
+  background: #f3f3f3;
+  left: 50%;
+  top: 120px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 2;
+  border: 2px solid #f3f3f3;
+}
+.history .logo img {
+  width: 100%;
+  max-width: 100%;
+  display: block;
 }
 .history .history-container {
   padding: 0 0 30px;
@@ -1873,5 +1894,8 @@ footer .container-mobile .footer-text {
   }
   .container-mobile .burger-menu {
     right: 25px !important;
+  }
+  .mobile-menu__search .close {
+    right: 25px;
   }
 }

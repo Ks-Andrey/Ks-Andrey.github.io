@@ -185,10 +185,11 @@ header{
         width: 130px;
         max-width: 100%;
         border-radius: 100px;
-        background: #fff;
+        background: #f3f3f3;
         left: 12.5%;
         transform: translateX(-50%) translateY(-50%);
         z-index: 2;
+        border: 2px solid #f3f3f3;
         img{
             width: 100%;
             max-width: 100%;
@@ -852,6 +853,10 @@ footer .container-mobile .footer-text{
 
 .mobile{
     background: #fff;
+    header .logo{
+        background: #fff;
+        border: 2px solid #fff;
+    }
     footer{
         padding: 25px 10px;
         box-sizing: border-box;
@@ -947,7 +952,7 @@ footer .container-mobile .footer-text{
         left: 50%;
         transform: translate(-50%, -50%);
         padding: 0 10px;
-        width: 100%;
+        width: 305px;
         box-sizing: border-box;
         input{
             width: 100%;
@@ -983,7 +988,7 @@ footer .container-mobile .footer-text{
     }
     .close{
         position: absolute;
-        right: 15px;
+        right: 35px;
         top: 20px;
     }
 
@@ -1078,9 +1083,6 @@ footer .container-mobile .footer-text{
         align-items: center;
         padding: 20px 15px;
         box-sizing: border-box;
-        .close{
-            margin-right: 10px;
-        }
         button{
             cursor: pointer;
             outline: none;
@@ -1112,6 +1114,25 @@ footer .container-mobile .footer-text{
 
 .history{
     padding-top: 80px;
+    position: relative;
+    .logo{
+        position: absolute;
+        width: 130px;
+        max-width: 100%;
+        border-radius: 100px;
+        background: #f3f3f3;
+        left: 50%;
+        top: 120px;
+        transform: translateX(-50%);
+        z-index: 2;
+        border: 2px solid #f3f3f3;
+        img{
+            width: 100%;
+            max-width: 100%;
+            display: block;
+        }
+    }
+
     .history-container{
         padding: 0 0 30px;
         background: #fff;
@@ -1528,5 +1549,8 @@ footer .container-mobile .footer-text{
     }
     .container-mobile .burger-menu{
         right: 25px !important;
+    }
+    .mobile-menu__search .close{
+        right: 25px;
     }
 }
