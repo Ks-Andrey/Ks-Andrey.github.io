@@ -10,6 +10,42 @@
     <link rel="stylesheet" href="fonts/stylesheet.css">
 </head>
 <body class="mobile">
+
+    <div class="bg hidden"></div>
+    <div class="container-mobile">
+        <div class="review-accept hidden">
+            <div class="title">Отзыв добавлен</div>
+            <p>Отзыв будет опубликован после проверки модератором</p>
+            <button class="close-popap">Закрыть</button>
+            <button class="close"><svg version="1.1" id="Режим_изоляции"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18.45 17.47"
+                style="enable-background:new 0 0 18.45 17.47;" xml:space="preserve">
+           <path fill="#000" d="M10.28,8.74l4.47-4.47c0.29-0.29,0.29-0.77,0-1.06s-0.77-0.29-1.06,0L9.22,7.68L4.75,3.21c-0.29-0.29-0.77-0.29-1.06,0
+               s-0.29,0.77,0,1.06l4.47,4.47l-4.47,4.47c-0.29,0.29-0.29,0.77,0,1.06s0.77,0.29,1.06,0L9.22,9.8l4.47,4.47
+               c0.29,0.29,0.77,0.29,1.06,0s0.29-0.77,0-1.06L10.28,8.74z"/>
+           </svg>
+           </button>
+        </div>
+    </div>
+
+    <div class="container-mobile">
+        <div class="sign-in__popap hidden">
+            <div class="title">Авторизация</div>
+            <p>К подписи к коментарию будет использоваться ваше Имя</p>
+            <form>
+                <input type="text" placeholder="Ваше Имя">
+                <button>Войти</button>
+            </form>
+            <button class="close"><svg version="1.1" id="Режим_изоляции"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18.45 17.47"
+                style="enable-background:new 0 0 18.45 17.47;" xml:space="preserve">
+           <path fill="#000" d="M10.28,8.74l4.47-4.47c0.29-0.29,0.29-0.77,0-1.06s-0.77-0.29-1.06,0L9.22,7.68L4.75,3.21c-0.29-0.29-0.77-0.29-1.06,0
+               s-0.29,0.77,0,1.06l4.47,4.47l-4.47,4.47c-0.29,0.29-0.29,0.77,0,1.06s0.77,0.29,1.06,0L9.22,9.8l4.47,4.47
+               c0.29,0.29,0.77,0.29,1.06,0s0.29-0.77,0-1.06L10.28,8.74z"/>
+           </svg>
+           </button>
+        </div>
+    </div>
     
     <nav class="mobile-nav">
         <div class="mobile-menu">
@@ -149,14 +185,14 @@
 
                         <div class="form-group">
                             <h2>Комментарии (нет комментариев)</h2>
-                            <form>
+                            <form onsubmit="return false;">
                                 <textarea placeholder="Авторизуйтесь по кнопке «Войти», чтобы оставить свой комментарий"></textarea>
                                 <button class="sing-in">Войти</button>
                             </form>
                         </div>
                         <div class="form-group">
                             <h2>Комментарии (2)</h2>
-                            <form>
+                            <form onsubmit="return false;">
                                 <textarea placeholder="Генадий, оставьте свой комментарий"></textarea>
                                 <p>Нажимая кнопку "Добавить комментарий" я соглашаюсь с <a href="#">условиями обработки данных</a>, а также с <a href="#">правилами добавления комментариев</a>.</p>
                                 <div class="form-group__buttons">
@@ -229,5 +265,6 @@
     </footer>
 
     <script src="js/menu.js"></script>
+    <script src="js/popap.js"></script>
 </body>
 </html>
